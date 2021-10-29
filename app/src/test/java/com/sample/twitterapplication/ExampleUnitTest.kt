@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.sample.twitterapplication
 
 import org.junit.Test
 
