@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="follow_topic">Follow Topic</string>
-    <string name="x">x</string>
+    <string name="app_name">Twitter API</string>
+    <string name="search_hint">buscar</string>
+    <string name="comments_count_value">0</string>
+    <string name="warning_dialog_title">Error</string>
+    <string name="warning_dialog_message">Algo deu errado por favor tente novamente</string>
 </resources>

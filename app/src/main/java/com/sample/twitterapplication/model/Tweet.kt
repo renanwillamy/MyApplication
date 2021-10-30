@@ -1,13 +1,18 @@
 package com.sample.twitterapplication.model
 
-class Tweet() {
-    lateinit var userName: String
-    lateinit var text: String
-    lateinit var screenName: String
+import com.google.gson.annotations.SerializedName
 
-    constructor(userName: String, text: String) : this() {
-        this.userName = userName
-        this.text = text
-    }
-
-}
+data class Tweet(
+        @SerializedName("id")
+        var id : Long,
+        @SerializedName("text")
+        var text : String,
+        @SerializedName("user")
+        var user : User,
+        @SerializedName("retweet_count")
+        var retweetCount : Long,
+        @SerializedName("favorite_count")
+        var favoriteCount : Long,
+        @SerializedName("created_at")
+        var createdAt : String
+)

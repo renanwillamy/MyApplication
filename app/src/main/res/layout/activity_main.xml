@@ -6,10 +6,32 @@
     android:layout_height="match_parent"
     tools:context=".activities.MainActivity">
 
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:text="The Witcher 3"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/edit_text_round"
+        android:drawableEnd="@drawable/ic_baseline_search"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="@string/search_hint"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTweets"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/edtSearch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="10dp"
         tools:listitem="@layout/item_view_tweet"
         tools:itemCount="5"/>
 
